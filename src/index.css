@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+li {
+    @apply cursor-pointer hover:text-pink-900 font-medium
+}
