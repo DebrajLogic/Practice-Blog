@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 function BlogCard() {
   return (
@@ -9,7 +10,7 @@ function BlogCard() {
           alt=""
         />
       </div>
-      <h2 className="font-semibold my-2 tracking-wide text-lg">
+      <h2 className="font-semibold my-2 tracking-wide text-lg line-clamp-1 text-ellipsis">
         How to choose the right hotel
       </h2>
       <small className="font-light text-sm">6 March 2024</small>
@@ -18,6 +19,12 @@ function BlogCard() {
         you have to choose a hotel. Ten years ago, you&apos;d have probably
         visited your local travel agent and trusted the face
       </p>
+      <Button
+        text="Read More"
+        className={
+          "my-2 hover:bg-white hover:text-pink-900 text-white bg-pink-900"
+        }
+      />
     </div>
   );
 }
